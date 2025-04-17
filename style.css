@@ -89,6 +89,14 @@ a:hover {
     font-weight: bold;
 }
 
+.small-centered {
+    font-size: 10px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 0;
+    max-width: 80%;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
