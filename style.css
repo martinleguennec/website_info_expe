@@ -1,24 +1,105 @@
-/* Corps de page */
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-  font-family: sans-serif;
-  max-width: 600px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-  color: #222;
-  line-height: 1.5;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: #f5f0e1; /* Light beige background similar to the image */
+    line-height: 1.6;
+    color: #000;
 }
 
-/* Titres */
-h1, h2 {
-  color: #111;
-  margin-bottom: 0.5rem;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f0e1;
 }
 
-/* Liens */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo-left img {
+    height: 80px;
+}
+
+.logo-right img {
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    max-width: 60%;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main {
+    padding: 10px 0;
+}
+
+.intro p {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 15px 0 15px 30px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.map {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
 a {
-  color: #0066cc;
-  text-decoration: none;
+    color: #005a87;
+    text-decoration: underline;
 }
+
 a:hover {
-  text-decoration: underline;
+    color: #003d5c;
+}
+
+.schedule-link {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    
+    h1 {
+        margin: 15px 0;
+        max-width: 100%;
+    }
+    
+    .logo-left, .logo-right {
+        margin-bottom: 10px;
+    }
 }
